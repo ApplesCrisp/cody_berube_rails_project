@@ -1,0 +1,14 @@
+
+  <h1><%= @artist.name %></h1>
+  <p class="success-notice"><%= notice %></p>
+  <div class="button-div">
+    <%= link_to "Edit Artist", edit_artist_path(@artist), :class=>"btn btn-primary buttons" %>
+  </div>
+
+  <div class="button-div">
+    <%= button_to "Delete Artist", @artist, method: :delete, :class=>"btn btn-danger buttons" %>
+  </div>
+  <div class="button-div">
+    <%= link_to "View All Artists", artists_path, :class=>"btn btn-success buttons" %>
+  </div>
+

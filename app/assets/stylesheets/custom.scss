@@ -1,0 +1,79 @@
+
+body {
+  font-family: "Georgia";
+  background-image: url(asset_path('application_background.jpg'));
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
+    
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+}
+
+.back-buttons {
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+}
+
+#credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: xx-small;
+}
+
+.button-div {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  width: 50%;
+}
+.input-fields {
+  width: 50% !important;
+}
+
+.button_to {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+}
+
+.success-notice {
+  color: green;
+  width: 100%;
+  text-align: center;
+}
+
+.button-col {
+  width:30%;
+}
+
+
+h1 {
+  text-align: center;
+  color: #343a40 !important;
+}

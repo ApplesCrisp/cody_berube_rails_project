@@ -1,0 +1,11 @@
+
+  <h1>New Artist</h1>
+  <%= form_with model: @artist, url: '/add_artist' do |form| %>
+    <div class="input-div">
+      <%= form.text_field :name, :class => 'input-fields form-control', :placeholder => "Artist Name", :required => true %>
+    </div>
+    <div class="button-div">
+      <%= form.submit "Save", :class => "btn btn-primary buttons" %>
+    </div>
+  <% end %>
+

@@ -1,0 +1,9 @@
+  <h1>Edit Artist</h1>
+  <%= form_with method: :put, model: @artist, id: @artist.id, url: "/artists/#{@artist.id}" do |form| %>
+    <div class="input-div">
+      <%= form.text_field :name, :class => 'input-fields form-control', :placeholder => "Artist Name", :required => true %>
+    </div>
+    <div class="button-div">
+      <%= form.submit "Save", :class => "btn btn-primary buttons" %>
+    </div>
+  <% end %>

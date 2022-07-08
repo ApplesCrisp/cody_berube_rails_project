@@ -1,0 +1,16 @@
+<h1>Editing Album</h1>
+<%= form_with method: :put, model: @album, artist_id: @artist, url: "/albums/#{@album.id}" do |form| %>
+  <div class="input-div">
+    <%= form.text_field :name, :class => 'input-fields form-control', :placeholder => "Album Name", :required => true %>
+  </div>
+  <div class="input-div">
+    <%= form.number_field :year, value: Date.today.year, :class => 'input-fields form-control', :placeholder => "Year", :required => true %>
+  </div>
+  <div class="input-div">
+      <%= form.collection_select(:artist_id, Artist.all.order(:id), :id, :name, {:prompt=>true, :selected=>@album.artist_id, :required => true}, {:class=>"form-control input-fields"}) %>
+  </div>
+
+  <div class="button-div">
+    <%= form.submit "Save", :class => "btn btn-primary buttons" %>
+  </div>
+<% end %>
