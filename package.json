@@ -1,8 +1,4 @@
 {
-  "scripts": {
-    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
-    "dev": "webpack-dev-server"
-  },
   "dependencies": {
     "@rails/webpacker": "5.4.3",
     "bootstrap": "4.3.1",
