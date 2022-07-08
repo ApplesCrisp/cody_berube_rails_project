@@ -16,6 +16,3 @@
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 import '../stylesheets/application'
-
-require("@rails/ujs").start()
-require("@rails/activestorage").start()
