@@ -1,2 +1,0 @@
-class AlbumArtist < ApplicationRecord
-end
